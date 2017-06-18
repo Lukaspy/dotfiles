@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/lukas/.i3'
+let g:netrw_dirhist_2='/run/media/lukas/MUSICBOX/config'
+let g:netrw_dirhist_3='/home/lukas/.oh-my-zsh/plugins'
