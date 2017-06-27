@@ -50,7 +50,9 @@ bindsym Mod1+F1 exec --no-startup-id google-chrome-stable
 bindsym Mod1+F2 exec --no-startup-id pcmanfm
 bindsym Mod1+F3 exec --no-startup-id ckb
 bindsym Mod1+F4 exec --no-startup-id /usr/bin/steam -silent %U 
-bindsym Mod1+Print exec --no-startup-id scrot -s -e 'xclip -selection clipboard -t image/png -i $f; rm $f'
+bindsym --release Print exec scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/Screenshots/'
+
+
 
 
 #pulseaudio control junk
