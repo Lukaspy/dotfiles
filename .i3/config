@@ -246,3 +246,12 @@ bar {
 		                  urgent_workspace  $urgent-bg-color   $urgent-bg-color   $text-color
 	}
 }
+
+mode "System"{
+        bindsym s exec shutdown now
+        bindsym r exec reboot
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+
+}
+bindsym Mod1+Control+s mode "System"
