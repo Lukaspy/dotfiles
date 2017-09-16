@@ -13,13 +13,16 @@
 #font pango:monospace 8
 #Set anoymous pro as font
 font pango:Anoymous Pro 10
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
+
 #workspace vars
 set $workspace10 "10: Music"
 set $hangouts "Hangouts"
 set $transmission "Transmission"
+
 # Window borders
 new_window 1pixel
 smart_borders on
@@ -37,6 +40,9 @@ assign [class="Chromium"] $workspace10
 assign [class="Google-chrome" instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] $hangouts
 assign [class="Pavucontrol"] $workspace10
 assign [class="Transmission-gtk"] $transmission 
+
+#Make hangout focus upon launch
+for_window [class="Google-chrome" instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] focus_on_window_activation focus
 
 #autostart programs
 exec --no-startup-id redshift -l 43.695442:-116.354014 -t 6000:4000 -g 0.8
