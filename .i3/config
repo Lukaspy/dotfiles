@@ -27,13 +27,14 @@ set $transmission "Transmission"
 new_window 1pixel
 smart_borders on
 gaps inner 13 #7
-gaps outer 0
+gaps outer 5
+smart_gaps on
 
-workspace 1 output DisplayPort-0
-workspace 2 output DVI-I-0
+workspace 1 output DP-1 #DisplayPort-0
+workspace 2 output DVI-I-1
 workspace 3 output DVI-D-1
 workspace $workspace10 output DVI-D-1
-workspace $hangouts output DisplayPort-0
+workspace $hangouts output DP-1 #DisplayPort-0
 workspace $transmission output DVI-D-1
 
 assign [class="Chromium"] $workspace10
