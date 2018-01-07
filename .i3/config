@@ -23,6 +23,7 @@ set $workspace10 "10: Music"
 set $hangouts "Hangouts"
 set $transmission "Transmission"
 set $discord "Discord"
+set $spotify "Spotify"
 
 # Window borders
 new_window 1pixel
@@ -38,12 +39,15 @@ workspace $workspace10 output DVI-D-1
 workspace $hangouts output DP-1 #DisplayPort-0
 workspace $transmission output DVI-D-1
 workspace $discord output DVI-D-1
+workspace $spotify output DP-1
 
 assign [class="Chromium"] $workspace10
 assign [class="Google-chrome" instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] $hangouts
 assign [class="Pavucontrol"] $workspace10
 assign [class="Transmission-gtk"] $transmission 
 assign [class="discord"] $discord
+assign [class="Spotify"] $spotify
+
 #for_window [class="Steam" name="Steam Guard - Computer Authorization Required"] floating enable
 
 #Make hangout focus upon launch
@@ -183,6 +187,7 @@ bindsym Mod1+0 workspace $workspace10
 bindsym Mod1+Control+h workspace $hangouts
 bindsym Mod1+Control+t workspace $transmission
 bindsym Mod1+Control+d workspace $discord
+bindsym Mod1+Control+r workspace $spotify
 
 # move focused container to workspace
 bindsym Mod1+Shift+1 move container to workspace 1
