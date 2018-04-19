@@ -56,6 +56,7 @@ assign [class="Oracle VM VirtualBox Manager"] $virtualbox
 
 #Make hangout focus upon launch
 for_window [class="Google-chrome" instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] focus_on_window_activation focus
+for_window [class="Chromium"] focus_on_window_activation focus
 
 #autostart programs
 exec --no-startup-id redshift -l 43.695442:-116.354014 -t 6000:4000 -g 0.8
