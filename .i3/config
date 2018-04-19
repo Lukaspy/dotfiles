@@ -24,6 +24,7 @@ set $hangouts "Hangouts"
 set $transmission "Transmission"
 set $discord "Discord"
 set $spotify "Spotify"
+set $virtualbox "Virtual Box"
 
 # Window borders
 new_window 1pixel
@@ -35,11 +36,13 @@ smart_gaps on
 workspace 1 output DP-1 #DisplayPort-0
 workspace 2 output DVI-I-1
 workspace 3 output DVI-D-1
+
 workspace $workspace10 output DVI-D-1
 workspace $hangouts output DP-1 #DisplayPort-0
 workspace $transmission output DVI-D-1
 workspace $discord output DVI-D-1
 workspace $spotify output DVI-D-1
+workspace $virtualbox output DVI-I-1
 
 assign [class="Chromium"] $workspace10
 assign [class="Google-chrome" instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] $hangouts
@@ -47,6 +50,7 @@ assign [class="Pavucontrol"] $workspace10
 assign [class="Transmission-gtk"] $transmission 
 assign [class="discord"] $discord
 assign [class="Spotify"] $spotify
+assign [class="Oracle VM VirtualBox Manager"] $virtualbox
 
 #for_window [class="Steam" name="Steam Guard - Computer Authorization Required"] floating enable
 
@@ -189,6 +193,7 @@ bindsym Mod1+Control+h workspace $hangouts
 bindsym Mod1+Control+t workspace $transmission
 bindsym Mod1+Control+d workspace $discord
 bindsym Mod1+Control+r workspace $spotify
+bindsym Mod1+Control+v workspace $virtualbox
 
 # move focused container to workspace
 bindsym Mod1+Shift+1 move container to workspace 1
