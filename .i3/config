@@ -64,6 +64,7 @@ exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/wallpaper.jpg
 exec --no-startup-id chromium http://volumio.local
 exec --no-startup-id compton -f
 exec --no-startup-id pavucontrol
+exec --no-startup-id keepassxc
 
 #quickstarts
 bindsym Mod1+F1 exec --no-startup-id google-chrome-stable
