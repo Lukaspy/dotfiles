@@ -25,6 +25,7 @@ set $transmission "Transmission"
 set $discord "Discord"
 set $spotify "Spotify"
 set $virtualbox "Virtual Box"
+set $keepass "Keepass"
 
 # Window borders
 new_window 1pixel
@@ -43,6 +44,7 @@ workspace $transmission output DVI-D-1
 workspace $discord output DVI-D-1
 workspace $spotify output DVI-D-1
 workspace $virtualbox output DVI-I-1
+workspace $keepass output DP-1
 
 assign [class="Chromium"] $workspace10
 assign [class="Google-chrome" instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] $hangouts
@@ -51,6 +53,7 @@ assign [class="Transmission-gtk"] $transmission
 assign [class="discord"] $discord
 assign [class="Spotify"] $spotify
 assign [class="Oracle VM VirtualBox Manager"] $virtualbox
+assign [class="keepassxc"] $keepass
 
 #for_window [class="Steam" name="Steam Guard - Computer Authorization Required"] floating enable
 
@@ -74,8 +77,6 @@ bindsym Mod1+F4 exec --no-startup-id /usr/bin/steam -silent %U
 bindsym --release Print exec scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/Screenshots/'
 
 
-
-
 #pulseaudio control junk
 #bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
 #bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
@@ -85,11 +86,13 @@ bindsym XF86AudioLowerVolume exec --no-startup-id $HOME/.Launchers/volumecontrol
 bindsym XF86AudioMute exec --no-startup-id $HOME/.Launchers/volumecontrol.sh mute
 bindsym Mod1+Ctrl+m exec pavucontrol
 
+
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
 
 #assign Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -196,6 +199,7 @@ bindsym Mod1+Control+t workspace $transmission
 bindsym Mod1+Control+d workspace $discord
 bindsym Mod1+Control+r workspace $spotify
 bindsym Mod1+Control+v workspace $virtualbox
+bindsym Mod1+Control+k workspace $keepass
 
 # move focused container to workspace
 bindsym Mod1+Shift+1 move container to workspace 1
