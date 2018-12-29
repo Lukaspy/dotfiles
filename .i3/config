@@ -35,15 +35,15 @@ gaps outer 5
 smart_gaps on
 
 workspace 1 output DP-1 #DisplayPort-0
-workspace 2 output DVI-I-1
-workspace 3 output DVI-D-1
+workspace 2 output DVI-D-1
+workspace 3 output DVI-I-1
 
-workspace $workspace10 output DVI-D-1
+workspace $workspace10 output DVI-I-1
 workspace $hangouts output DP-1 #DisplayPort-0
-workspace $transmission output DVI-D-1
-workspace $discord output DVI-D-1
-workspace $spotify output DVI-D-1
-workspace $virtualbox output DVI-I-1
+workspace $transmission output DVI-I-1
+workspace $discord output DVI-I-1
+workspace $spotify output DVI-I-1
+workspace $virtualbox output DVI-D-1
 workspace $keepass output DP-1
 
 assign [class="Chromium"] $workspace10
