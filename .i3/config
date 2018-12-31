@@ -62,6 +62,7 @@ for_window [class="Google-chrome" instance="crx_nckgahadagoaajjgafhacjanaoiihapd
 for_window [class="Chromium"] focus_on_window_activation focus
 
 #autostart programs
+exec --no-startup-id /home/lukas/.screenlayout/layout.sh
 exec --no-startup-id redshift -l 43.695442:-116.354014 -t 6000:4000 -g 0.8
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/wallpaper.jpg
 exec --no-startup-id chromium http://volumio.local
